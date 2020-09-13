@@ -14,36 +14,43 @@
      </div>
      <div fxFlex>
             <mat-grid-list cols="2" rowHeigh="200px">
-                <mat-grid-tile *ngFor="let dish of dishes">
+                <mat-grid-tile *ngFor="let dish of dishes" (click)="selectGrid(dish)">
                     <img height="200px" matListAvatar src={{dish.image}} alt={{dish.name}} >
                     <mat-grid-tile-footer>
                         <h1 >{{dish.name | uppercase}}</h1>
-                        <!-- <p matLine>
-                            <span>{{dish.description}}</span>
-                        </p> -->
+                    
                     </mat-grid-tile-footer>
                    
                 </mat-grid-tile>
             </mat-grid-list>
      </div>
-
-     <div fxFlex *ngIf="selectedDish">
-          <mat-card>
-              <mat-card-header>
-                  <mat-card-title>
-                      <h3>{{selectedDish.name | uppercase}}</h3>
-                  </mat-card-title>
-              </mat-card-header>
-              <img mat-card-image src={{selectedDish.image}}>
-              <mat-card-content>
-                 <p>{{selectedDish.description}}</p>
-
-              </mat-card-content>
-              <mat-card-actions>
-                  <button mat-button>Like</button>
-                  <button mat-button>Share</button>
-              </mat-card-actions>
-          </mat-card>   
-     </div>
     
+     <!-- <div fxFlex *ngIf="selectedDish">
+        <mat-grid-list cols="2" rowHeigh="300px">
+            <mat-grid-tile >
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>
+                            <h3>{{selectedDish.name | uppercase}}</h3>
+                        </mat-card-title>
+                    </mat-card-header>
+                    <img mat-card-image src={{selectedDish.image}}>
+                    <mat-card-content>
+                       <p>{{selectedDish.description}}</p>
+      
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button>Like</button>
+                        <button mat-button>Share</button>
+                    </mat-card-actions>
+                </mat-card> 
+            </mat-grid-tile>
+            <mat-grid-tile >
+                <app-comment></app-comment>
+            </mat-grid-tile>
+        </mat-grid-list>
+
+           
+     </div> -->
+    <app-dishdetail [dish]="selectedDish"></app-dishdetail>
 </div>

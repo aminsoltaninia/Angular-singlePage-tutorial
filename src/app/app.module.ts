@@ -14,13 +14,19 @@ import { AppComponent } from './app.component';
 
 import "hammerjs";
 import { MenuComponent } from './menu/menu.component';
+import { DishdetailComponent } from './dishdetail/dishdetail.component';
 
-//console.log(AppComponent)
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    DishdetailComponent,
+  
+   
   ],
   imports: [
     BrowserModule,
@@ -38,4 +44,6 @@ import { MenuComponent } from './menu/menu.component';
 })
 
 
-export class AppModule { }
+export class AppModule {
+ 
+ }
