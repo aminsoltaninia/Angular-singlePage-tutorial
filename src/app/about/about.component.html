@@ -1,1 +1,30 @@
-<p>about works!</p>
+
+<p>ABOUT US</p>
+
+<div class="container"
+fxLayout="row"
+fxLayout.sm="column"
+fxlayout.xs="column"
+fxLayoutAlign.gt-md="space-around center"
+fxLayoutGap="10px"
+fxLayoutGap.xs="0">
+
+<div fxFlex>
+    <mat-list  >
+        <h3>Corporate Leaders</h3>
+        <mat-list-item *ngFor="let corporate of CORPORATES">
+            
+                <img dir="ltr" src="{{corporate.image}}" alt="{{corporate.name}}" class="img-responsive img-rounded"
+                style="max-height: 50px; max-width: 50px;">
+                
+            
+            <h4 matLine>{{corporate.name}}</h4>
+            <p matLine>{{corporate.jobTitle}}</p>
+            <p matLine> -- {{corporate.description}} </p>
+        </mat-list-item>
+    </mat-list>
+
+</div>
+
+</div>
+
