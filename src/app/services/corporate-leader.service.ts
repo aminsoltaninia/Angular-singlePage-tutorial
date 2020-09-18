@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Corporate} from '../shared/corporate';
 import {CORPORATES} from '../shared/corporates';
+import {Observable,of } from 'rxjs';
+import { delay } from 'rxjs/operators';
 
 
 @Injectable({
@@ -11,11 +13,14 @@ export class CorporateLeaderService {
   constructor() { }
   
 
-  getCorporates() : Corporate[]{
-      return CORPORATES ;
+  getCorporates() : Observable< Corporate[]>{
+   
+      return  of(CORPORATES).pipe(delay(2000))
   }
   
-  getFeaturedCorporate() : Corporate {
-    return CORPORATES.filter(item => item.featured )[0]
+  getFeaturedCorporate() : Observable<Corporate>{
+    
+    return of(CORPORATES.filter(item => item.featured )[0]).pipe(delay(2000)) 
+    
   }
 }

@@ -21,9 +21,16 @@
 
             </mat-card-content>
             <mat-card-actions>
+                <button mat-button [routerLink]="['/dishdetail' , prev]">
+                        <i class="fa fa-chevron-left fa-lg"></i> 
+                </button>
                 <button mat-button (click)="goBack()">Back</button>
                 <button mat-button>Like</button>
                 <button mat-button>Share</button>
+                <span class="flex-spacer"></span>
+                <button mat-button [routerLink]="['/dishdetail' , next]">
+                    <i class="fa fa-chevron-right fa-lg"></i>
+                </button>
             </mat-card-actions>
         </mat-card> 
      </div>
@@ -38,5 +45,10 @@
          </mat-list>
 
      </div>
-
+     <div fxFlex [hidden]="dish">
+        <mat-spinner>
+           
+        </mat-spinner>   
+        <h4>Loading  ... please wait ! </h4>
+    </div>
 </div>

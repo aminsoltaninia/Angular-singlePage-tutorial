@@ -10,7 +10,7 @@ fxLayoutGap="10px"
 fxLayoutGap.xs="0">
 
 <div fxFlex>
-    <mat-list  >
+    <mat-list *ngIf="CORPORATES" >
         <h3>Corporate Leaders</h3>
         <mat-list-item *ngFor="let corporate of CORPORATES">
             
@@ -23,7 +23,12 @@ fxLayoutGap.xs="0">
             <p matLine> -- {{corporate.description}} </p>
         </mat-list-item>
     </mat-list>
-
+    <div fxFlex [hidden]="CORPORATES">
+        <mat-spinner>
+           
+        </mat-spinner>   
+        <h4>Loading  ... please wait ! </h4>
+    </div>
 </div>
 
 </div>

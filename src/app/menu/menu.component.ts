@@ -19,7 +19,11 @@ export class MenuComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.dishes = this.dishService.getDishes();
+     this.dishService.getDishes()
+                                   .subscribe((dishes)=>{
+                                      this.dishes = dishes;
+                                   })
+                                  
   }
   selectGrid (dish : Dish ){
     this.selectedDish = dish
