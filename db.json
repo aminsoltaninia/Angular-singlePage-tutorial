@@ -1,0 +1,220 @@
+{
+  "dishes": [
+    {
+        "id": "0",
+        "name": "uthappizzaa",
+        "image": "images/download.jpg",
+        "category": "mains",
+        "featured": true,
+        "label": "Hot",
+        "price": "4.99",
+        "description": "this is first",
+        "comment" : [
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            }
+        ]
+      },
+      {
+        "id": "1",
+        "name": "ghorme",
+        "image": "images/download (1).jpg",
+        "category": "mains",
+        "featured": false,
+        "label": "notHot",
+        "price": "3.05",
+        "description": "this is second",
+        "comment" : [
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "uthappizzaa",
+        "image": "images/download (2).jpg",
+        "category": "apetizer",
+        "featured": true,
+        "label": "melo",
+        "price": "4.09",
+        "description": "this is third",
+        "comment" : [
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "uthappizzaa",
+        "image": "images/download (3).jpg",
+        "category": "apetizer",
+        "featured": true,
+        "label": "new",
+        "price": "4.99",
+        "description": "this is forth",
+        "comment" : [
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date": ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date" : ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date" : ""
+            },
+            {
+                "rating" : 4.2,
+                "comment" : "",
+                "author" : "",
+                "date" : ""
+            }
+        ]
+      }
+    
+    
+  ] ,    
+  "comments": [
+    {
+      "id": "0",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "promotions":[
+    {
+       "id" : "0",
+       "name" : "Weekend Grand Buffet",
+       "image" : "images/download (3).jpg",
+       "lable" : "New",
+       "price" : "19.99",
+       "featured" : true ,
+       "description" : "djdfhdjhfjd"
+    }
+],
+  "feedback":{
+    "firstname" : "" , 
+    "lastname" :"",
+    "telnumber" :"",
+    "email" : "" ,
+    "agree" : "boolean" ,
+    "contacttype" : "",
+    "message" : "" 
+  },
+  "corporates":[
+    {
+         "id" : "0",
+         "name" : "v",
+         "image" : "images/download.jpg",
+         "description" : "cv",
+         "featured" : true,
+         "jobTitle" : "cvc"
+
+    },
+    {
+        "id" : "1",
+        "name" : "v",
+        "image" : "images/download.jpg",
+        "description" : "cv",
+        "featured" : true,
+        "jobTitle" : "cvc"
+    }
+]
+}

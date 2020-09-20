@@ -21,6 +21,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { ReactiveFormsModule} from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {HttpClientModule} from '@angular/common/http'
 
 
 import { AppComponent } from './app.component';
@@ -37,11 +38,14 @@ import { ContantComponent } from './contant/contant.component';
 import {DishService } from './services/dish.service';
 import {PromotionService } from './services/promotion.service';
 import {CorporateLeaderService} from './services/corporate-leader.service';
+import {ProcessHttpMsgService} from './services/process-http-msg.service'
 
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import { CorporateLeaderComponent } from './corporate-leader/corporate-leader.component';
 import { LoginComponent } from './login/login.component';
 
+import {baseUrl} from'./shared/baseUrl';
+import { HighlightDirective } from './directives/highlight.directive'
 
 
 @NgModule({
@@ -56,6 +60,7 @@ import { LoginComponent } from './login/login.component';
     ContantComponent,
     CorporateLeaderComponent,
     LoginComponent,
+    HighlightDirective,
      
    
   ],
@@ -65,6 +70,7 @@ import { LoginComponent } from './login/login.component';
     MatToolbarModule,
     FlexLayoutModule,
     AppRoutingModule,
+    HttpClientModule,
     MatListModule,
     MatGridListModule,
     MatCardModule,
@@ -82,7 +88,9 @@ import { LoginComponent } from './login/login.component';
   providers: [
      DishService ,
      PromotionService,
-     CorporateLeaderService
+     CorporateLeaderService,
+     ProcessHttpMsgService,
+     {provide : 'baseUrl' , useValue:baseUrl}
   ],
   entryComponents:[
     LoginComponent

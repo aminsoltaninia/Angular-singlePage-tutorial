@@ -19,20 +19,5 @@ export const CORPORATES : Corporate [] = [
         featured : true,
         jobTitle : 'cvc'
     },
-    {
-        id : '0',
-        name : 'v',
-        image : 'assets/images/download.jpg',
-        description : 'cv',
-        featured : true,
-        jobTitle : 'cvc'
-    },
-    {
-        id : '0',
-        name : 'v',
-        image : 'assets/images/download.jpg',
-        description : 'cv',
-        featured : true,
-        jobTitle : 'cvc'
-    }
+ 
 ]
